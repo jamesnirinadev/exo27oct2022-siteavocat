@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JamesLatra-siteavocat-27oct</title>
+<style>
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0%;
+    padding: 0%;
+    display:flex;
+    flex-direction: column;
+}
+
+
+
+header {
+    margin: 0vh 10vw 0vh 10vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+#top_line{
+    color: gray;
+    padding: 5px 0px 40px 0px;
+    font-size: 0.8rem;
+}
+
+
+
+
+
+#top_logo{
+    display:flex;
+    justify-content:space-between;
+}
+
+#top_logo > * {
+    display:flex;
+    flex:1;
+    align-items: center;
+}
+
+.logo_siteweb {
+    padding: 1rem 5rem;
+    transition-timing-function: ease-out;
+    transition: 0.25s;
+}
+.logo_siteweb:hover {
+    transform: translate(0px, 8px)
+}
+
+.phonenumber{
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    font-size: 1em;
+    background: none;
+    transition: all 0.8s ease;
+}
+
+.phonenumber:hover {
+    color:white;
+    background-color: black;
+}
+
+nav {
+}
+
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0.2em 1em;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+}
+
+
+
+nav ul li a {
+text-decoration: none;
+}
+
+
+nav ul li:hover {
+color:black;
+border-bottom: 2px solid black;
+}
+
+
+
+section {
+    height: 200px;
+    display: flex;
+}
+
+section:nth-of-type(1) {
+background-image: url(./danequin.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+height:500px;
+margin: 0px 40px 50px 40px;
+display: flex;
+}
+
+section:nth-of-type(2) {
+    background-image: url(./pattern.jpg);
+    background-repeat: repeat;
+    height:600px;
+    margin: 0em 0em;
+    display: flex;
+}
+
+section:nth-of-type(3) {
+    display: flex;
+    height:1000px;
+    margin: 0em 0em;
+    display: flex;
+}
+
+#inner_section1,
+#inner_section2,
+#inner_section3 {
+    margin:auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#inner_section1 {
+    background-color: black;
+    height: 200px;
+}
+#inner_section2 {
+    height: 400px;
+}
+
+/* SECTION 1 */
+
+#inner_section1_A{
+display:flex;
+align-items: flex-end;
+margin:auto;
+padding:10px;
+height: 100px;
+border-bottom: 1px solid white;
+color: white;
+font-variant-caps: titling-caps;
+font-size: 0.8rem;
+flex:1;
+
+}
+
+
+
+#inner_section1_B{
+    display:flex;
+    align-items: flex-start;
+    margin:auto;
+    height: 100px;
+    border-bottom: 1px solid white;
+    color: white;
+    font-variant-caps: titling-caps;
+    font-size: 2rem;
+}
+
+
+/* SECTION 2 */
+
+#inner_section2_A{
+    display:flex;
+    height: 100px;
+    color: white;
+    font-variant-caps: titling-caps;
+    font-size: 1.5rem;
+    flex-direction: column;
+}
+
+#inner_section2_A p {
+    margin:auto
+}
+
+#inner_section2_A hr {
+    margin: auto;
+    display:flex;
+    color:white;
+    border: 2px solid white;
+    width: 80px;
+}
+
+
+
+#inner_section2_B {
+    display:flex;
+    height: 100px;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#inner_section2_B img:nth-child(1) {
+    display:flex;
+    padding:30px;
+}
+
+
+#inner_section2_B .VictorHugo {
+    display:flex;
+    color: white;
+}
+
+#inner_section2_B img:nth-child(3) {
+    display:flex;
+    rotate: 180deg;
+    padding:30px;
+}
+
+.VictorHugo {
+    display:flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+}
+
+.VictorHugo P:nth-child(1) {
+    font-style:oblique
+}
+
+.VictorHugo P:nth-child(2) {
+    display: flex;
+    font-size: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: -10px;
+}
+
+
+#inner_section2_B:nth-child(3) {
+    display:flex;
+}
+
+
+
+#inner_section2_C {
+    display:flex;
+    height: 200px;
+    color: white;
+    font-variant-caps: titling-caps;
+    font-size: 0.8rem;
+    flex-direction:row;
+}
+
+.intervention {
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intervention:nth-of-type(2) {
+    border: 2px solid white;
+    border-bottom: none;
+    border-top: none;
+}
+
+
+.intervention_logo {
+    display:flex;
+    justify-content: center;
+}
+
+.intervention_logo img {
+    display:flex;
+    width: 45%;
+    height: 90%;
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(143deg) brightness(101%) contrast(102%);
+}
+
+.intervention_text {
+    font-variant-caps: titling-caps;
+    margin: 0% 10% 0% 10%;
+    text-align: center;
+}
+
+
+.intervention_icon {
+    display:flex;
+    justify-content: center;
+    margin: 0% 10% 0% 10%;
+}
+
+
+.intervention_icon img {
+    display:flex;
+    width: 15%;
+    height: 90%;
+    filter: invert(26%) sepia(95%) saturate(7075%) hue-rotate(3deg) brightness(93%) contrast(126%);
+}
+
+.intervention_icon:hover img {
+    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(143deg) brightness(101%) contrast(102%);
+}
+
+
+/* SECTION 3 */
+#inner_section3 {
+    display:flex;
+    height: 900px;
+    width: 80vw;
+    background-color: white;
+    flex-direction: column;
+    font-size: 1rem;
+}
+
+#inner_section3_A,
+#inner_section3_B,
+#inner_section3_C,
+#inner_section3_D,
+#inner_section3_E {
+    display: flex;
+    height: 200px;
+}
+
+#inner_section3_A,
+#inner_section3_B {
+    display:flex;
+    color: black;
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+#inner_section3_A {
+    height:100px;
+    padding: 0px 10px;
+}
+
+#inner_section3_A p {
+    display:flex;
+    margin:auto;
+    font-size: 1.5rem;
+}
+
+#inner_section3_A hr {
+    margin: auto;
+    display:flex;
+    color:black;
+    border: 2px solid black;
+    width: 80px;
+}
+
+#inner_section3_B {
+    height: auto;
+
+}
+
+#inner_section3_B p {
+    padding:20px;
+    /* margin:auto;
+    margin: 0% 5% 0% 5%; */
+}
+
+#inner_section3_C {
+    display:flex;
+    flex-direction:row;
+    height: auto;
+}
+
+.descriptif {
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    padding:10px;
+}
+
+
+.descriptif img {
+    padding:10px;
+}
+.descriptif h2 {
+    color: #a33737;
+}
+
+
+
+#inner_section3_D {
+    display: flex;
+    color: #a33737;
+    font-weight: 700;
+    background-color: #e2e1e1;
+    justify-content: center;
+    height: 45px;
+    text-align: center;
+}
+
+#inner_section3_E {
+    display: flex;
+    justify-content: center;
+    height: auto;
+    padding: 25px;
+}
+
+.savoirplus_btn {
+    display:flex;
+    width: fit-content;
+    padding: 0.5rem 1.5rem;
+    font-size: 1em;
+    font-weight: 700;
+    background: none;
+    transition: all 0.8s ease;
+    font-variant-caps: titling-caps;
+}
+
+.savoirplus_btn:hover {
+    color:white;
+    background-color: black;
+}
+
+
+/* FOOTER */
+footer {
+    height:250px;
+    display: flex;
+    background-color: #e2e1e1;
+    justify-content:center;
+}
+
+
+#inner_footer {
+    display: flex;
+    flex: row;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.footmenu {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    height: 200px;
+    width:400px;
+    flex:1;
+    flex-direction: column;
+}
+
+.footmenu img {
+    display:flex;
+    padding-bottom: 70px;
+}
+
+.footmenu .foottitle {
+display: flex;
+font-size:2em;
+font-variant-caps: titling-caps;
+flex-direction: column;
+}
+
+.footmenu .menuliste {
+display: flex;
+}
+
+
+
+
+</style>
+
+</head>
+<body>
+
+
+<header>
+    <div id="top_line"> Cabinet d'avocat en soutien aux victimes dans la juridictions de Paris</div>
+    <aside id="top_logo">
+            <div><button class="phonenumber">06 37 99 13 29</button></div>
+            <img class="logo_siteweb" src="./logo.jpg" alt="Logo Cabinet avocat de Paris">
+            <div></div>
+    </aside>
+
+
+    <nav>
+        <ul>
+            <li><a>Accueil</a></li>
+            <li><a>Joachim Thibout Avocat</a></li>
+            <li><a>Droit des victimes et du dommages corporel</a></li>
+            <li><a>Droit de la famille</a></li>
+            <li><a>Honoraires</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+<section>
+    <div id="inner_section1">
+            <div id="inner_section1_A">DROIT DES VICTIMES ET DU DOMMAGE CORPOREL - DROIT DE LA FAMILLE</div>
+            <div id="inner_section1_B">JOACHIM THIBOUT AVOCAT</div>
+    </div>
+</section>
+
+<section>
+    <div id="inner_section2">
+            <div id="inner_section2_A"><p>NOS DOMAINES D'INTERVENTION</p><hr></div>
+            <div id="inner_section2_B">
+                                    <img src="./quote-1.svg" alt="citation-Victor-Hugo">
+                                    <div class="VictorHugo">
+                                                    <p>Si vous avez la force, il nous reste le droit</p>
+                                                    <p>--Victor Hugo</p>
+                                    </div>
+                                    <img src="./quote-1.svg" alt="citation-Victor-Hugo"></div>
+            <div id="inner_section2_C">
+                                    <div class="intervention">
+                                                        <div class="intervention_logo"><img src="./broken-arm.png" alt="broken arm"></div>
+                                                        <div class="intervention_text">DROIT DES <b> VICTIMES</b></div>
+                                                        <div class="intervention_icon"><img src="./plus.png" alt="plus icon"></div>
+                                    </div>
+                                    <div class="intervention">
+                                                        <div class="intervention_logo"><img src="./broken-heart.png" alt="broken heart"></div>
+                                                        <div class="intervention_text">DROIT DE LA <b> FAMILLE</b></div>
+                                                        <div class="intervention_icon"><img src="./plus.png" alt="plus icon"></div>
+                                    </div>
+                                    <div class="intervention">
+                                                        <div class="intervention_logo"><img src="./horse-head.png" alt="horse head"></div>
+                                                        <div class="intervention_text">DROIT <b> ÉQUIN</b></div>
+                                                        <div class="intervention_icon"><img src="./plus.png" alt="plus icon"></div>
+                                    </div>
+            </div>
+    </div>
+</section>
+
+
+<section>
+    <div id="inner_section3">
+            <div id="inner_section3_A">
+                                <p>Un cabinet d'avocat aux côtés des victimes de Paris</p><hr>
+            </div>
+
+            <div id="inner_section3_B">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit illo hic eligendi inventore, mollitia esse numquam deserunt consequatur earum, blanditiis vel odio quasi molestias reiciendis exercitationem sit! Accusamus voluptatibus harum id quisquam, quidem quos voluptatum pariatur perspiciatis excepturi commodi et a!</p>
+            </div>
+
+
+            <div id="inner_section3_C">
+                                <div class="descriptif">
+                                    <img src="./portrait.jpg" alt="Mon portrait">
+                                </div>
+                                <div class="descriptif">
+                                    <h2>Conseiller et défendre les victimes</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi id, doloribus vitae veniam praesentium, recusandae reprehenderit quos rem libero alias explicabo? Unde molestiae ab culpa aliquid, recusandae maxime omnis ducimus ipsam consequatur veniam quisquam laudantium similique id totam, pariatur fugiat eos, expedita perferendis optio nemo a! Eaque est vel molestias omnis beatae nesciunt, esse, nisi excepturi, assumenda corrupti non vero tempore magni porro obcaecati error iusto autem. Dicta sequi, porro placeat cum labore quas nulla iusto non reiciendis ratione suscipit iste, velit perferendis necessitatibus modi temporibus? Fugiat tempora commodi ab incidunt ullam harum, quam id quia suscipit magni blanditiis vel totam labore deleniti sit aperiam? Vero eveniet officiis fugit in debitis. Nemo suscipit rem mollitia sequi iste velit esse. Natus eos autem deleniti repellendus distinctio accusamus? </p>
+                                </div>
+            </div>
+
+
+            <div id="inner_section3_D">
+                                <p>Le cabinet de Maître Thibout intervient exclusivement au soutien des intérêts des développeurs, majeurs et mineurs.</p>
+            </div>
+
+
+            <div id="inner_section3_E">
+                                <button class="savoirplus_btn">EN SAVOIR PLUS</button>
+            </div>
+
+
+
+
+
+
+
+
+    </div>
+
+</section>
+
+<footer>
+    <div id="inner_footer">
+                        <div class="footmenu">
+                            <img class="logo_siteweb" src="./logo.jpg" alt="Logo Cabinet avocat de Paris">
+                        </div>
+                        <div class="footmenu">
+                                <div class="foottitle">TITRE</div>
+                                <div class="menuliste">
+                                    <ul>
+                                        <li>menu</li>
+                                        <li>menu</li>
+                                        <li>menu</li>
+                                        <li>menu</li>
+                                    </ul>
+                                    <ul>
+                                        <li>menu</li>
+                                        <li>menu</li>
+                                        <li>menu</li>
+                                        <li>menu</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="footmenu">
+                                <div class="foottitle">TITRE</div>
+                                <div class="menuliste">
+                                    <ul>
+                                        <li>menu</li>
+                                        <li>menu</li>
+                                        <li>menu</li>
+                                        <li>menu</li>
+                                    </ul>
+                                </div>
+
+                        </div>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
